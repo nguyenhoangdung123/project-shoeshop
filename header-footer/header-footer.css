@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+#name {
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: monospace;
+    width: 55%;
+    display: block;
+    text-align: right;
+}
+#title .icon {
+    margin-left: 10px;
+}
+#foot {
+    width: 100%;
+    height: 200px;
+    float: left;
+    margin-top: 50px;
+}
+.foot{
+    font-size: 10pt;
+    font-weight: lighter;
+    font-family: monospace;
+    margin-left: 140px;
+    margin-top: 10px;
+    color: black;
+}
+.foot:hover{
+    cursor: pointer;
+}
+.footer{
+    font-size: 14pt;
+    font-weight: lighter;
+    font-family: monospace;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+.footer:hover{
+    cursor: pointer;
+}
