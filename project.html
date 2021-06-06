@@ -31,11 +31,34 @@
         </div>
         <div id="title"
             style="color: black;display: flex;height: 100%;align-items: center;justify-content: flex-end;width: 40%;">
-            <i class="fas fa-user icon"></i>
-            <i class="fas fa-search icon"></i>
+            <a href="./login-page/login.html" style="text-decoration: none;color: black;">
+                <i class="fas fa-user icon"></i>
+            </a>
+            <i class="fas fa-search icon" id="search-icon"></i>
             <i class="fas fa-shopping-cart icon"></i>
         </div>
     </header>
+    <div id="searchdrawer">
+        <form action="" id="searchform">
+            <input type="type" placeholder="Type to search" id="searchbar">
+            <div>
+                <div id="popular1">Popular Searches</div>
+                <div>    
+                    <div class="polular-searches">Nike</div>
+                   
+                </div>
+                <div>
+                    <div class="polular-searches">Jordan</div>
+                    
+                </div>
+                <div>
+                    <div class="polular-searches">Adidas</div>
+                </div>
+            </div>
+        </form>
+        <div id="searchresource"></div>
+    </div>
+    <div class="deepdark" id="dark-all"></div>
     <div id="slides" style="height: 500px;">
 
 
@@ -55,10 +78,11 @@
     <a class="prev" id="prev-btn">&#10094</a>
     <a class="next" id="next-btn">&#10095</a>
     </div>
-    <div>
-        <div style="margin-left: 5%;font-size: 20pt;font-family: monospace;font-weight: bold;margin-top:30px;width: 95%;">
-            Most Popular shoes</div>
-        <div style="display: flex;">
+    <div style="margin-left: 5%;font-size: 20pt;font-family: monospace;font-weight: bold;margin-top:30px;width: 95%;">
+        Most Popular shoes</div>
+    <div id="outstandingshoes">
+
+        <!-- <div style="display: flex;">
             <div>
                 <div style="width: 442.81px;padding: 12px ;">
                     <img src="img/pic5.jpg" class="imagine">
@@ -202,9 +226,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="option">See more</div>
+        </div> -->
+
     </div>
+    <div id="option">See more</div>
     <footer id="foot">
         <div>
             <div style="display: flex;margin-left: 200px;">

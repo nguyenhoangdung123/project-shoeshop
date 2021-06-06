@@ -1,0 +1,24 @@
+#title1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 25pt;
+    font-weight: bold;
+    margin-top: 150px;
+}
+#btn {
+    width: 300px;
+    height: 50px;
+    margin-left: 565px;
+    margin-top: 70px;
+    margin-bottom: 180px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 12pt;
+    line-height: 3.0;
+}
+#btn:hover {
+    cursor: pointer;
+    color: grey;
+}
