@@ -23,7 +23,7 @@ body {
     font-size: 10pt;
     font-weight: lighter;
     font-family: monospace;
-    margin-left: 140px;
+    margin-left: 160px;
     margin-top: 10px;
     color: black;
 }
@@ -34,7 +34,7 @@ body {
     font-size: 14pt;
     font-weight: lighter;
     font-family: monospace;
-    margin-left: 140px;
+    margin-left: 160px;
     margin-top: 10px;
 }
 .footer:hover{

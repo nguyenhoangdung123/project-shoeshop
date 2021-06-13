@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./header-footer/header-footer.css">
+    <link rel="stylesheet" href="../header-footer/header-footer.css">
     <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-        crossorigin="anonymous" />
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b57d63ef91.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="login.css">
     <script src="https://kit.fontawesome.com/7a06f6b716.js" crossorigin="anonymous"></script>
@@ -28,43 +30,39 @@
         <div id="name" style="height: 100%;line-height: 100px;">
             Sneakervn
         </div>
-        <div id="title"
-            style="color: black;display: flex;height: 100%;align-items: center;justify-content: flex-end;width: 40%;">
-            <a href="./login-page/login.html" style="text-decoration: none;color: black;">
-                <i class="fas fa-user icon"></i>
-            </a>
-            <i class="fas fa-search icon" id="search-icon"></i>
-            <i class="fas fa-shopping-cart icon"></i>
-        </div>
+
     </header>
-    <div id="searchdrawer">
-        <form action="" id="searchform">
-            <input type="text" id="searchbar">
-        </form>
-        <div id="searchresource"></div>
-    </div>
     <div class="deepdark" id="dark-all"></div>
     <div id="slides" style="height: 500px;">
 
-    <div id="container">
-        <div id="loginbox">
-            <div id="text1">SIGN IN</div>
-            <div id = "socialmediaicon">
-                <i class="fab fa-facebook" id = "icon1"></i>
-                <i class="fab fa-google" id = "icon2"></i>
-                <i class="fab fa-twitter" id = "icon3"></i>
+        <div id="container">
+
+            <div id="loginbox">
+                <div id="signin">
+                    <p id="text1">Sign In</p>
+                    <div class="socialmediaicon">
+                        <div class="button"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a></div>
+                        <div class="button"><a href="#"><i class="fa fa-google"></i>Google</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div id="name1">Username</div>
+                        <input type="i1" id="input1" placeholder="type username">
+                    </div>
+                    <div>
+                        <div id="pw">Password</div>
+                        <input type="i2" id="input2" placeholder="type password">
+                    </div>
+                    <div id="forget">Forgot your password?</div>
+                    <button id="button1">Sign in</button>
+                    <div style="display: flex;">
+                        <div id="no">Not a member?</div>
+                        <div id="signup" onclick="signup()">Sign up now</div>
+                    </div>
+                </div>
+                
             </div>
-            <div id = "subtext">or use your account</div>
-            <div id = "textcontainer1">
-                <input class="i1" id = "input1" placeholder="NAME">
-            </div>
-            <div id = "textcontainer2">
-                <input class="i1" id = "input2" placeholder="PASSWORD">
-            </div>
-            <div id = "forget">FORGOT YOUR PASSWORD?</div>
-            <button id = "button1">SIGN IN</button>
-            <div id = "no">NO ACCOUNT YET?</div>
-            <div id = "signup" onclick = "signup()">SIGN UP</div>
         </div>
         <footer id="foot">
             <div>

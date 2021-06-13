@@ -95,6 +95,7 @@ const renderSearchResource = (items) => {
     }
 }
 const searchShoes = async (searchstring) => {
+    console.log(searchstring);
     const response = await fetch("https://60b8d463b54b0a0017c048f8.mockapi.io/api/v1/shoes");
     const data = await response.json();
     let searchResource = [];
@@ -103,6 +104,7 @@ const searchShoes = async (searchstring) => {
             searchResource.push(shoes);
         }
     }
+    console.log(searchResource);
     renderSearchResource(searchResource);
 }
 searchForm.addEventListener('submit', (e) => {
@@ -114,7 +116,11 @@ searchBar.addEventListener('keyup', () => {
         searchResourceEl.innerHTML = "";
     }
 })
-const ountStandingShoesEl = document.getElementById("outstandingshoes");
+const outStandingShoesEl = document.getElementById("outstandingshoes");
+function moveToDetail  (productId) {
+    localStorage.setItem("productId",productId);
+    window.location.href = "/detail/detail.html"
+}
 const renderOutstandingShoes = async () => {
     const response = await fetch("https://60b8d463b54b0a0017c048f8.mockapi.io/api/v1/shoes");
     const data = await response.json();
@@ -122,8 +128,7 @@ const renderOutstandingShoes = async () => {
     let rowHtml = "";
     for (let i = 0; i < shoesToShow.length; i++) {
         if ((i + 1) % 4 === 0) {
-        console.log(i);
-            ountStandingShoesEl.innerHTML += `
+            outStandingShoesEl.innerHTML += `
             <div style="display: flex;margin-left:15px;">
                 ${rowHtml}
             </div>
@@ -132,9 +137,8 @@ const renderOutstandingShoes = async () => {
         }
         
         else {
-            console.log(shoesToShow[i]);
             rowHtml += ` 
-            <div>
+            <div id="${shoesToShow[i].id}" class="item"> 
                 <div style="width: 442.81px;padding: 12px ;">
                     <img src="${shoesToShow[i].imgineShoes}" class="imagine">
                     <div>
@@ -145,6 +149,13 @@ const renderOutstandingShoes = async () => {
             </div>
             `
         }
+    }
+    const itemsEl = document.getElementsByClassName("item");
+    console.log(itemsEl);
+    for (let item of itemsEl) {
+        item.addEventListener ("click", () => {
+            moveToDetail(item.id);
+        })
     }
 }
 renderOutstandingShoes();

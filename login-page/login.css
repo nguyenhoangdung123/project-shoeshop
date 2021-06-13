@@ -2,97 +2,152 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: unset;
+}
 #container{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background: linear-gradient(45deg, #00dbde, #e317fd);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%; 
+    height: 90vh;
+    box-shadow: whitesmoke;
 }
 #loginbox {
     width: 450px;
-    height: 600px;
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 25px;
+    height: 520px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    float: left;
 }
 #text1 {
-    text-align: center;
-    font-size: 30pt;
     margin-top: 25px;
-}
-#textcontainer1 {
-    margin-left: 20px;
-    margin-top: 40px;
+    font-weight: bold;
+    font-size: 22pt;
+    font-family: 'Sansita Swashed' , cursive;
     text-align: center;
 }
-#textcontainer2 {
-    margin-top: 25px;
-    margin-left: 20px;
-    text-align: center;
+#name1{
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: 'Sansita Swashed' , cursive;
+    margin-left: 30px;
+    margin-top: 15px;
 }
-.i1 {
-    width: 300px;
-    height: 30px;
-    border: 2px solid black;
-    padding: 5px;
+#pw{
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: 'Sansita Swashed' , cursive;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+#input1{
+    width: 390px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 30px;
+    border-top: 1px black solid;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
     border-radius: 10px;
 }
-#socialmediaicon {
+#input2{
+    width: 390px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 30px;
+    border-top: 1px black solid;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+#forget{
+    font-weight: lighter;
+    font-size: 12pt;
+    font-family: 'Sansita Swashed' , cursive;
+    margin-top: 15px;
     text-align: center;
-    margin-top: 20px;
-    font-size: 30pt;
 }
-#icon1:hover {
+#forget:hover{
     cursor: pointer;
-}
-#icon2:hover {
-    cursor: pointer;
-}
-#icon3:hover {
-    cursor: pointer;
-}
-#icon2 {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-#subtext {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 15pt;
-}
-#forget {
-    font-size: 10pt;
-    text-align: center;
-    margin-top: 25px;
-}
-#forget:hover {
-    cursor: pointer;
-    text-decoration: underline;
 }
 #button1 {
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
+    width: 120px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 170px;
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: 'Sansita Swashed' , cursive;
+    border: 1px solid black;
     background-color: white;
-    width: 100px;
-    height: auto;
-    margin-left: 180px;
-    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
 }
-#button1:hover {
+#button1:hover{
     cursor: pointer;
-    background-color: tomato;
+}
+.button{
+    padding: 10px;
+    width: 40%;
+    height: 50px;
+    border: none;
+    font-size: 1em;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 1s;
+    box-shadow: 0 1px 3px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button a{
+    text-decoration: #fff;
+    color: #fff;
+}
+.button a:hover{
+    text-decoration: #fff;
+    color: #fff;
+}
+.button:nth-child(1){
+    background: #004085;
+}
+.button:nth-child(2){
+    background: green;
+}
+.button:hover{
+   cursor: pointer;
+}
+.socialmediaicon{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 #no {
-    text-align: center;
+    font-size: 12pt;
+    font-weight: lighter;
+    font-family: 'Sansita Swashed' , cursive;
+    margin-left: 110px;
     margin-top: 20px;
 }
+#no:hover{
+    cursor: pointer;
+}
 #signup {
-    text-align: center;
+    font-size: 12pt;
+    font-weight: lighter;
+    font-family: 'Sansita Swashed' , cursive;
+    margin-left: 30px;
     margin-top: 20px;
 }
 #signup:hover{
     cursor: pointer;
-    text-decoration: underline;
 }

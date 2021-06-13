@@ -57,6 +57,7 @@
     width: 493.81px;
     height: 380.56px;
     display: inline;
+    object-fit: contain;
 }
 .information {
     text-align: center;

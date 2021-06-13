@@ -2,39 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
-    <link rel="stylesheet" href="header-footer.css">
-    <link rel="stylesheet" href="details.css">
-    <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../header-footer/header-footer.css">
+        <link rel="stylesheet" href="../project.css">
+        <link rel="stylesheet" href="detail.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b57d63ef91.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="head">
-        <div style="margin-top: 30px; width: 60%;">
-            <span id="header">Sneakervn</span>
+    <header id="head" style="display: flex;text-align: center;height: 100px;">
+        <div id="name" style="height: 100%;line-height: 100px;">
+            Sneakervn
         </div>
-        <div style="margin-top: 35px; width: 40%;">
-            <span id="browse">Browse</span>
-            <span id="news">News</span>
-            <span id="about">About</span>
-            <span id="help">Help</span>
-            <span id="login">Log in</span>
-            <span id="signup">Sign up</span>
-            <span id="sell">Sell</span>
+        <div id="title"
+            style="color: black;display: flex;height: 100%;align-items: center;justify-content: flex-end;width: 40%;">
+            <a href="./login-page/login.html" style="text-decoration: none;color: black;">
+                <i class="fas fa-user icon"></i>
+            </a>
+            <i class="fas fa-search icon" id="search-icon"></i>
+            <i class="fas fa-shopping-cart icon"></i>
         </div>
     </header>
-    <main>
-        <div id="brand-name"></div>
-        <div id="container-img">
-            <img src="" alt="shoes" id="display-img">
+    <div id="searchdrawer">
+        <form action="" id="searchform">
+            <input type="type" placeholder="Type to search" id="searchbar">
+            <div>
+                <div id="popular1">Popular Searches</div>
+                <div>    
+                    <div class="polular-searches">Nike</div>
+                   
+                </div>
+                <div>
+                    <div class="polular-searches">Jordan</div>
+                    
+                </div>
+                <div>
+                    <div class="polular-searches">Adidas</div>
+                </div>
+            </div>
+        </form>
+        <div id="searchresource"></div>
+    </div>
+    <div class="deepdark" id="dark-all"></div>
+    <div id="detail">
+        <div id="product-name"></div>
+        <div id="product-description"></div>
+        <div id="product-color"></div>
+        <div id="product-releasedate"></div>
+        <div id="product-price"></div>
+        <div id="product-brand"></div>
+        <button id="addtocart">Add To Cart</button>
+        <img src="" alt="" id="product-imgineshoes">
+    </div>
+    <footer id="foot">
+        <div>
+            <div style="display: flex;margin-left: 200px;">
+                <div>
+                    <div class="footer">Service and Support</div>
+                    <div class="foot">sneakervn@gmail.com</div>
+                    <div class="foot">+89123456789</div>
+                    <div class="foot">Locations</div>
+                </div>
+                <div>
+                    <div class="footer">Info</div>
+                    <div class="foot">Consignment Terms</div>
+                    <div class="foot">Contact with Us</div>
+                    <div class="foot">Delivery and Return</div>
+                    <div class="foot">FAQs</div>
+                </div>
+                <div>
+                    <div class="footer">Follow Us</div>
+                    <div class="foot">Facebook</div>
+                    <div class="foot">Instagram</div>
+                    <div class="foot">Twitter</div>
+                </div>
+            </div>
         </div>
-        <div id="designer-name"></div>
-        <div id="release-date"></div>
+    </footer>
+    <script src="detail.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../header-footer/header-footer.js"></script>
     
-    </main>
-    <footer></footer>
-    <script src="header-footer.js"></script>
-    <script src="details.js"></script>
 </body>
 </html>
